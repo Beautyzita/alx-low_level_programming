@@ -10,7 +10,7 @@ int main(void)
 	int c = '0';
 
 
-	if (c <= '9')
+	if (c < '10')
 {
 	putchar(c);
 	c++;
