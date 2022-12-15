@@ -1,8 +1,8 @@
-# "mainh"
+# "main.h"
 
 
 /**
- * main - 1-alphabet.c
+ * main - Entry point
  *
  * Return: Always 0 (Success)
  */
