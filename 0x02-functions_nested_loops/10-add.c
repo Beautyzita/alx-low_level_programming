@@ -1,4 +1,4 @@
-include "main.h"
+#include "main.h"
 /**
  * add - it add the sum of two integers
  * @a: the first int in the question
