@@ -1,6 +1,6 @@
 #include "main.h"
 #include <stdio.h>
-
+#include <stdlib.h>
 /**
  * main - This is to find multiples of 3 and 5 that are below 1024
  * Return: return the value of the integer
