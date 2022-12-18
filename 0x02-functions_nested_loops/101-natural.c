@@ -12,16 +12,16 @@ int main(int i)
 	{
 		if (i % 15 == 0)
 		{
-			printf("%d\n" i);
+			printf("%d\n", i);
 		}
 		else if (i % 5 == 0)
 		{
-			printf("%d\n" i);
+			printf("%d\n", i);
 		}
 		else if (i % 3 == 0)
 		{
-			printf("%d\n" i);
+			printf("%d\n", i);
 		}
-		printf("%d\n" i);
+		printf("%d\n", i);
 	}
 }
