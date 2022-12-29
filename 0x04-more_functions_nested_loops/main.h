@@ -11,4 +11,5 @@ void print_diagonal(int n);
 void print_square(int size);
 int main(void);
 int _putchar(int i);
+int _putchar(int i);
 #endif

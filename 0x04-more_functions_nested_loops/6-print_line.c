@@ -2,16 +2,17 @@
 #include <stdio.h>
 
 /**
- * print_line - this draws a line in the terminal
- * @n: number of times the character should be printed
+* print_line - this draws a line in the terminal
+* @n: Number of times the character should be printed
  */
-void print_lines(int n)
+void print_line(int n)
 {
 		int i;
+
 		for (n <= 0)
 		for (i = 1; i <= n; i++)
 		{
 		putchar('_');
 		}
-		putchar('\n');}
+		putchar('\n');
 }
