@@ -13,11 +13,11 @@ char *_strstr(char *haystack, char *needle)
 	char *bhaystack;
 	char *pneedle;
 
-	while (*haystack != '\o')
+	while (*haystack != '\0')
 	{
-		bhatstack = haystack;
+		bhaystack = haystack;
 		pneedle = needle;
-	while (*haystack != '\o' && *pneedle != '\o' && *haystack == *pneedle)
+	while (*haystack != '\0' && *pneedle != '\0' && *haystack == *pneedle)
 	{
 		haystack++;
 		pneedle++;
