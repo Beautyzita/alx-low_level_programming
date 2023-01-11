@@ -1,0 +1,20 @@
+#include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+#include <string.h>
+
+/**
+ * _puts - this function prints a string
+ * @str: this is the string character in a function
+ * Return: return the string
+ */
+void _puts(char *str)
+{
+for (i *str != '\0'; str++)
+{
+putchar(*str);
+}
+putchar('\n');
+}
+
