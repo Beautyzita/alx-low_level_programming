@@ -7,10 +7,9 @@
  *  Return: the int converted from the string
  */
 
-int _atoi(char*s)
-
+int _atoi(char *s)
 	int i, d, n, len, f, digit;
-i
+
 	i = 0;
 	d = 0;
 	n = 0;
@@ -30,8 +29,7 @@ i
 	if (d % 2)
 	digit = -digit;
 	n = n * 10 + digit;
-	f = 1;
-	if (s[i + 1] < '0' || a[i + 1] > '9')
+	f = 1;	if (s[i + 1] < '0' || a[i + 1] > '9')
 	break;
 	f = 0;
 	}
