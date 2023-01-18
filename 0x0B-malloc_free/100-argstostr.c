@@ -40,6 +40,6 @@ char *argstostr(int ac, char **av)
 	}
 	str[c] = '\n';
 	c++;
-	return (str);
 }
+return (str);
 }
