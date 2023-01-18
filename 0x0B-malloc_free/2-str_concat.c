@@ -41,3 +41,5 @@ nstr[i] = s2[j];
 i++;
 j++;
 }
+return (nstr);
+}
