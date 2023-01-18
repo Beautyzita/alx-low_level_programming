@@ -2,10 +2,10 @@
 #include <stdio.h>
 
 /**
- * *str_concat - concatenating two strings
- * @s1: string to concatenate
- * @s2: other string to concatenate
- * Return: pointer to the new string created (success ), or NULL (error)
+ *str_concat - concatinating two strings
+ * @s1: string to concatinate
+ * @s2: other string to concatinate
+ * Return: pointer to the new string created (success ), or NULL (ERROR)
  */
 char *str_concat(char *s1, char *s2)
 {
@@ -14,9 +14,9 @@ char *str_concat(char *s1, char *s2)
 	unsigned int j = 0, len1 = 0, len2 = 0;
 
 	if (s1 == NULL)
-		s1 = "";
+	s1 = "";
 	if (s2 == NULL)
-		s2 = "";
+	s2 = "";
 	len1 = 0;
 	while (s1[len1] != '\0')
 	len1++;
@@ -27,7 +27,7 @@ char *str_concat(char *s1, char *s2)
 	nstr = malloc((sizeof(char) * size) + 1);
 	/* this is to check if malloc is successful*/
 	if (nstr == NULL)
-		return (NULL);
+	return (NULL);
 	i = 0;
 	while (i < len1)
 	{
