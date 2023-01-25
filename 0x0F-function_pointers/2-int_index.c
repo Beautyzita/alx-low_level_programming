@@ -19,6 +19,7 @@ if (array && cmp)
 	if (size <= 0)
 	{
 		return (res);
+	}
 		for (i = 0; i < size; i++)
 		{
 			cmp(array[i]);
@@ -35,4 +36,4 @@ if (array && cmp)
 	}
 	return (res);
 }
-}
+
