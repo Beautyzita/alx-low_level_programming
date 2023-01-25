@@ -35,3 +35,4 @@ if (array && cmp)
 	}
 	return (res);
 }
+}
