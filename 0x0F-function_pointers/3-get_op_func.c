@@ -1,33 +1,30 @@
-#include <stdlib.h>
-#include <stdio.h>
+#include "3-calc.h"
 /**
- * main - prints opcodes of a given machine
- * @argc: number of arguments
- * @argv: Array of arguments
- * Return: 0
+ * get_op_func - function selects the correct function to perform
+ * @s: operator used
+ * Return: correct function result be NULL if operator is wrong
  */
-int main(int argc, char *argv[])
+int (*get_op_func(char *s))(int, int)
 {
-	int count, bytes;
+	op_t ops[] = {
+		{"+", op_add},
+		{"-", op_sub},
+		{"*", op_mul},
+		{"/", op_div},
+		{"%", op_mod},
+		{NULL, NULL}
+	};
+	int i;
 
-	if (argc != 2)
+	i = 0;
+	while (i < 5)
 	{
-		printf("Error\n");
-		exit(1);
+		if (s[0] == ops[i].op[0])
+		{
+			return (ops[i].f);
+		}
+		i++;
 	}
-	bytes = atoi(argv[1]);
-	if (bytes < 0)
-	{
-		printf("Error\n");
-		exit(2);
-	}
-	for (count = 0; count < bytes; count++)
-	{
-	printf("%02hhx", *((char *)main + count));
-	if (count < bytes - 1)
-	printf(" ");
-	else
-	printf("\n");
-	}
-	return (0);
+	return (NULL);
 }
+
