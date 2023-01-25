@@ -2,7 +2,7 @@
 #include <stddef.h>
 #include <stdio.h>
 #include <string.h>
-#include <ctype.e>
+#include <ctype.h>
 /**
  * array_iterator - function that executes function given to parameters
  * @array: array of elements
